@@ -43,14 +43,16 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: const [
-          TopBar(),
-          SearchBar(),
-          CategorySelectionRow(),
-          PopularToolkitsRow(),
-          DiyIdeas(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            TopBar(),
+            SearchBar(),
+            CategorySelectionRow(),
+            PopularToolkitsRow(),
+            DiyIdeas(),
+          ],
+        ),
       ),
     );
   }
