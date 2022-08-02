@@ -1,8 +1,10 @@
+import 'package:avaliacao_2/provider/category_selected_provider.dart';
 import 'package:avaliacao_2/provider/theme_provider.dart';
 import 'package:avaliacao_2/widgets/category_selection_row.dart';
 import 'package:avaliacao_2/widgets/search_bar.dart';
 import 'package:avaliacao_2/widgets/top_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +15,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: Themes.temaClaro,
-      debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CategorySelectedProvider()),
+      ],
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: Themes.temaClaro,
+        debugShowCheckedModeBanner: false,
+        home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      ),
     );
   }
 }

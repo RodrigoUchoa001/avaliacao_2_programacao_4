@@ -1,4 +1,7 @@
+import 'package:avaliacao_2/provider/category_selected_provider.dart';
+import 'package:avaliacao_2/widgets/category_container.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class CategorySelectionRow extends StatefulWidget {
   const CategorySelectionRow({Key? key}) : super(key: key);
@@ -10,36 +13,34 @@ class CategorySelectionRow extends StatefulWidget {
 class _CategorySelectionRowState extends State<CategorySelectionRow> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text('Categories', style: Theme.of(context).textTheme.bodyLarge),
-        SizedBox(
-          height: 80,
-          child: ListView.builder(
-            physics: const BouncingScrollPhysics(),
-            shrinkWrap: true,
-            itemCount: categories.length,
-            scrollDirection: Axis.horizontal,
-            itemBuilder: (_, index) {
-              return Container(
-                height: 80,
-                margin: const EdgeInsets.all(10),
-                color: Theme.of(context).appBarTheme.backgroundColor,
-                child: Row(
-                  children: [
-                    Icon(
-                      categories[index].icon,
-                      color: Colors.black,
-                    ),
-                    Text(categories[index].name),
-                  ],
-                ),
-              );
-            },
+    final provider = Provider.of<CategorySelectedProvider>(context);
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Categories', style: Theme.of(context).textTheme.bodyLarge),
+          SizedBox(
+            height: 80,
+            child: ListView.builder(
+              physics: const BouncingScrollPhysics(),
+              shrinkWrap: true,
+              itemCount: categories.length,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (_, index) {
+                return GestureDetector(
+                  onTap: () => provider.selecionaAtividade(index),
+                  child: CategoryContainer(
+                    index: index,
+                    icone: categories[index].icon,
+                    texto: categories[index].name,
+                  ),
+                );
+              },
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

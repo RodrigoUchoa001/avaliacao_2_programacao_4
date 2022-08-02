@@ -34,5 +34,6 @@ class Themes {
       ),
     ),
     cardColor: const Color(0xFF5acbb8),
+    disabledColor: const Color(0xFFF1EDE7),
   );
 }
