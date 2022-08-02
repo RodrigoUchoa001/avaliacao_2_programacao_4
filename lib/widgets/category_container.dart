@@ -23,6 +23,8 @@ class _CategoryContainerState extends State<CategoryContainer> {
     final categoriaAtivada = Theme.of(context).appBarTheme.backgroundColor;
     final categoriaDesativada = Theme.of(context).disabledColor;
 
+    final Color? corBorda = Theme.of(context).textTheme.bodyLarge?.color;
+
     return Container(
       width: 120,
       margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
@@ -31,16 +33,29 @@ class _CategoryContainerState extends State<CategoryContainer> {
             ? categoriaAtivada
             : categoriaDesativada),
         borderRadius: BorderRadius.circular(15),
+        border: Border.all(color: corBorda!.withOpacity(0.3)),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(
             widget.icone,
-            color: Colors.black,
+            // color: Theme.of(context).textTheme.bodyLarge?.color,
+            color: (provider.categories[widget.index]
+                ? Colors.white
+                : Theme.of(context).textTheme.bodyLarge?.color),
             size: 30,
           ),
-          Text(widget.texto),
+          Text(
+            widget.texto,
+            style: TextStyle(
+              // color: Theme.of(context).textTheme.bodyLarge?.color,
+              color:
+                  (provider.categories[widget.index] ? Colors.white : corBorda),
+              fontWeight: FontWeight.bold,
+              fontSize: 15,
+            ),
+          ),
         ],
       ),
     );
