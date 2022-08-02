@@ -13,6 +13,10 @@ class Themes {
         fontSize: 13,
         color: Colors.black.withOpacity(0.4),
       ),
+      bodyLarge: const TextStyle(
+        color: Color(0xFF868692),
+        fontWeight: FontWeight.bold,
+      ),
     ),
     inputDecorationTheme: InputDecorationTheme(
       enabledBorder: OutlineInputBorder(
