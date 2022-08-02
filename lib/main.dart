@@ -1,6 +1,7 @@
 import 'package:avaliacao_2/provider/category_selected_provider.dart';
 import 'package:avaliacao_2/provider/theme_provider.dart';
 import 'package:avaliacao_2/widgets/category_selection_row.dart';
+import 'package:avaliacao_2/widgets/popular_toolkits_row.dart';
 import 'package:avaliacao_2/widgets/search_bar.dart';
 import 'package:avaliacao_2/widgets/top_bar.dart';
 import 'package:flutter/material.dart';
@@ -46,6 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
           TopBar(),
           SearchBar(),
           CategorySelectionRow(),
+          PopularToolkitsRow(),
         ],
       ),
     );
