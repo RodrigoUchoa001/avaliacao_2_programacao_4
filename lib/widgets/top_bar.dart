@@ -6,7 +6,7 @@ class TopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 40),
+      padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 10),
       decoration: BoxDecoration(
         color: Theme.of(context).appBarTheme.backgroundColor,
       ),
