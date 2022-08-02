@@ -21,7 +21,7 @@ class _CategorySelectionRowState extends State<CategorySelectionRow> {
         children: [
           Text('Categories', style: Theme.of(context).textTheme.bodyLarge),
           SizedBox(
-            height: 80,
+            height: 70,
             child: ListView.builder(
               physics: const BouncingScrollPhysics(),
               shrinkWrap: true,
