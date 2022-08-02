@@ -74,6 +74,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  icon_decoration:
+    dependency: "direct main"
+    description:
+      name: icon_decoration
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.1"
   lints:
     dependency: transitive
     description:
@@ -179,4 +186,4 @@ packages:
     version: "2.1.2"
 sdks:
   dart: ">=2.17.6 <3.0.0"
-  flutter: ">=1.16.0"
+  flutter: ">=1.17.0"
