@@ -17,33 +17,34 @@ class DiyVideoWidget extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  height: 130,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    image: DecorationImage(
-                      fit: BoxFit.fitWidth,
-                      image: AssetImage(video.thumbnailPath),
-                    ),
-                  ),
-                ),
-                Baseline(
-                  baseline: -30,
-                  baselineType: TextBaseline.alphabetic,
-                  child: DecoratedIcon(
-                    icon: Icon(
-                      Icons.play_arrow,
-                      color:
-                          Theme.of(context).iconTheme.color!.withOpacity(0.6),
-                      size: 70,
-                    ),
-                    decoration: const IconDecoration(
-                      border: IconBorder(
-                        color: Colors.white,
-                        width: 3,
+                Stack(
+                  alignment: AlignmentDirectional.center,
+                  children: [
+                    Container(
+                      height: 130,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          fit: BoxFit.fitWidth,
+                          image: AssetImage(video.thumbnailPath),
+                        ),
                       ),
                     ),
-                  ),
+                    DecoratedIcon(
+                      icon: Icon(
+                        Icons.play_arrow,
+                        color:
+                            Theme.of(context).iconTheme.color!.withOpacity(0.6),
+                        size: 70,
+                      ),
+                      decoration: const IconDecoration(
+                        border: IconBorder(
+                          color: Colors.white,
+                          width: 3,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),

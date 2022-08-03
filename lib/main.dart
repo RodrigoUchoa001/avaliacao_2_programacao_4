@@ -50,15 +50,18 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            children: const [
-              TopBar(),
-              SearchBar(),
-              CategorySelectionRow(),
-              PopularToolkitsRow(),
-              DiyIdeas(),
-            ],
+        body: GestureDetector(
+          onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+          child: SingleChildScrollView(
+            child: Column(
+              children: const [
+                TopBar(),
+                SearchBar(),
+                CategorySelectionRow(),
+                PopularToolkitsRow(),
+                DiyIdeas(),
+              ],
+            ),
           ),
         ),
       ),

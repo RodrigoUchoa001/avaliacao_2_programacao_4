@@ -35,15 +35,16 @@ class TopBar extends StatelessWidget {
               ),
             ],
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
+          Stack(
+            alignment: AlignmentDirectional.topEnd,
             children: const [
               Icon(Icons.notifications_outlined),
-              Padding(
-                padding: EdgeInsets.only(right: 5),
-                child: Baseline(
-                  baseline: -20,
-                  baselineType: TextBaseline.alphabetic,
+              Positioned(
+                right: 5,
+                top: 5,
+                child: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  radius: 8,
                   child: CircleAvatar(backgroundColor: Colors.red, radius: 6),
                 ),
               ),
