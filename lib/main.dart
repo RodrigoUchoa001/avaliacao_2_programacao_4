@@ -7,8 +7,14 @@ import 'package:avaliacao_2/widgets/search_bar.dart';
 import 'package:avaliacao_2/widgets/top_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    systemNavigationBarColor: Color(0xFFfcbc3d),
+    statusBarColor: Color(0xFFfcbc3d),
+    statusBarIconBrightness: Brightness.dark,
+  ));
   runApp(const MyApp());
 }
 
@@ -42,16 +48,18 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: const [
-            TopBar(),
-            SearchBar(),
-            CategorySelectionRow(),
-            PopularToolkitsRow(),
-            DiyIdeas(),
-          ],
+    return SafeArea(
+      child: Scaffold(
+        body: SingleChildScrollView(
+          child: Column(
+            children: const [
+              TopBar(),
+              SearchBar(),
+              CategorySelectionRow(),
+              PopularToolkitsRow(),
+              DiyIdeas(),
+            ],
+          ),
         ),
       ),
     );
