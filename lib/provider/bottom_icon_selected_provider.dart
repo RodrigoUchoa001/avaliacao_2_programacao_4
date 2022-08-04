@@ -13,4 +13,13 @@ class BottomIconSelectedProvider extends ChangeNotifier {
     }
     notifyListeners();
   }
+
+  int getIconActivated() {
+    for (int i = 0; i < icons.length; i++) {
+      if (icons[i]) {
+        return i;
+      }
+    }
+    return -1;
+  }
 }
