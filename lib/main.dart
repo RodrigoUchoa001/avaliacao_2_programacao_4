@@ -1,7 +1,9 @@
+import 'package:avaliacao_2/provider/bottom_icon_selected_provider.dart';
 import 'package:avaliacao_2/provider/category_selected_provider.dart';
 import 'package:avaliacao_2/provider/theme_provider.dart';
 import 'package:avaliacao_2/widgets/category_selection_row.dart';
 import 'package:avaliacao_2/widgets/diy_ideas.dart';
+import 'package:avaliacao_2/widgets/navigation_bar.dart';
 import 'package:avaliacao_2/widgets/popular_toolkits_row.dart';
 import 'package:avaliacao_2/widgets/search_bar.dart';
 import 'package:avaliacao_2/widgets/top_bar.dart';
@@ -26,6 +28,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => CategorySelectedProvider()),
+        ChangeNotifierProvider(create: (_) => BottomIconSelectedProvider()),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
@@ -64,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ),
+        bottomNavigationBar: const NavigationBottomBar(),
       ),
     );
   }

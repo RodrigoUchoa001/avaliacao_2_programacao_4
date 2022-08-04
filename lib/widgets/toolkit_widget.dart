@@ -25,31 +25,34 @@ class ToolkitWidget extends StatelessWidget {
               toolkit.title,
               style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Text(
-                  '${toolkit.price}\$/day',
-                  style: TextStyle(
-                      color: Colors.red.withOpacity(0.7),
-                      fontWeight: FontWeight.bold),
-                ),
-                Row(
-                  children: [
-                    Text(
-                      '${toolkit.rating}/5',
-                      style: TextStyle(
-                          color: Colors.grey.withOpacity(0.7),
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Icon(
-                      Icons.star,
-                      size: 20,
-                      color: Theme.of(context).appBarTheme.backgroundColor,
-                    ),
-                  ],
-                ),
-              ],
+            Expanded(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text(
+                    '${toolkit.price}\$/day',
+                    style: TextStyle(
+                        color: Colors.red.withOpacity(0.7),
+                        fontWeight: FontWeight.bold),
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        '${toolkit.rating}/5',
+                        style: TextStyle(
+                            color: Colors.grey.withOpacity(0.7),
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Icon(
+                        Icons.star,
+                        size: 20,
+                        color: Theme.of(context).appBarTheme.backgroundColor,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ],
         ),

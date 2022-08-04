@@ -6,9 +6,6 @@ class PopularToolkitsRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final StarColor = Theme.of(context).appBarTheme.backgroundColor;
-    final Color? corBorda = Theme.of(context).textTheme.bodyLarge?.color;
-
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
