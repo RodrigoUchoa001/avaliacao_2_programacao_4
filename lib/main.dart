@@ -2,6 +2,7 @@ import 'package:avaliacao_2/provider/bottom_icon_selected_provider.dart';
 import 'package:avaliacao_2/provider/category_selected_provider.dart';
 import 'package:avaliacao_2/provider/theme_provider.dart';
 import 'package:avaliacao_2/screens/my_home_page.dart';
+import 'package:avaliacao_2/screens/rents_screen.dart';
 import 'package:avaliacao_2/widgets/navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -46,7 +47,7 @@ class FirstWidget extends StatelessWidget {
     List<Widget> screens = const [
       MyHomePage(),
       Text('local'),
-      Text('calendar'),
+      RentsScreen(),
       Text('profile'),
     ];
     return SafeArea(

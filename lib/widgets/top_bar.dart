@@ -1,3 +1,4 @@
+import 'package:avaliacao_2/widgets/top_container.dart';
 import 'package:flutter/material.dart';
 
 class TopBar extends StatelessWidget {
@@ -5,11 +6,7 @@ class TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 10),
-      decoration: BoxDecoration(
-        color: Theme.of(context).appBarTheme.backgroundColor,
-      ),
+    return TopContainer(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
