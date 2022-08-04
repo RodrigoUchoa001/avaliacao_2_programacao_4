@@ -1,4 +1,4 @@
-import 'package:avaliacao_2/widgets/toolkit_widget.dart';
+import 'package:avaliacao_2/widgets/home/toolkit_widget.dart';
 import 'package:flutter/material.dart';
 
 class PopularToolkitsRow extends StatelessWidget {

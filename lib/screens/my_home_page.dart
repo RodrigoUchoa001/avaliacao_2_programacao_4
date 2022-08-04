@@ -1,10 +1,11 @@
+import 'package:avaliacao_2/widgets/home/home_top_bar.dart';
+import 'package:avaliacao_2/widgets/home/search_bar.dart';
+
 import 'package:flutter/material.dart';
 
-import 'package:avaliacao_2/widgets/category_selection_row.dart';
-import 'package:avaliacao_2/widgets/diy_ideas.dart';
-import 'package:avaliacao_2/widgets/popular_toolkits_row.dart';
-import 'package:avaliacao_2/widgets/search_bar.dart';
-import 'package:avaliacao_2/widgets/top_bar.dart';
+import 'package:avaliacao_2/widgets/home/category_selection_row.dart';
+import 'package:avaliacao_2/widgets/home/diy_ideas.dart';
+import 'package:avaliacao_2/widgets/home/popular_toolkits_row.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: SingleChildScrollView(
             child: Column(
               children: const [
-                TopBar(),
+                HomeTopBar(),
                 SearchBar(),
                 CategorySelectionRow(),
                 PopularToolkitsRow(),

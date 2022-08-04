@@ -1,4 +1,4 @@
-import 'package:avaliacao_2/widgets/diy_video_widget.dart';
+import 'package:avaliacao_2/widgets/home/diy_video_widget.dart';
 import 'package:flutter/material.dart';
 
 class DiyIdeas extends StatelessWidget {

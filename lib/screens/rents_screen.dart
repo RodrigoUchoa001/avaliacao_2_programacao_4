@@ -6,7 +6,11 @@ class RentsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TopContainer(child: Column());
+    return TopContainer(
+      child: Column(
+        children: [],
+      ),
+    );
   }
 }
 

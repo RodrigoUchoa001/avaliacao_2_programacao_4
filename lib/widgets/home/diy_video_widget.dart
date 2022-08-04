@@ -1,4 +1,4 @@
-import 'package:avaliacao_2/widgets/diy_ideas.dart';
+import 'package:avaliacao_2/widgets/home/diy_ideas.dart';
 import 'package:flutter/material.dart';
 import 'package:icon_decoration/icon_decoration.dart';
 

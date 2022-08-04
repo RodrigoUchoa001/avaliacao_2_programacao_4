@@ -1,8 +1,8 @@
 import 'package:avaliacao_2/widgets/top_container.dart';
 import 'package:flutter/material.dart';
 
-class TopBar extends StatelessWidget {
-  const TopBar({Key? key}) : super(key: key);
+class HomeTopBar extends StatelessWidget {
+  const HomeTopBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

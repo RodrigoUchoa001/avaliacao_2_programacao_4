@@ -1,5 +1,5 @@
 import 'package:avaliacao_2/provider/category_selected_provider.dart';
-import 'package:avaliacao_2/widgets/category_container.dart';
+import 'package:avaliacao_2/widgets/home/category_container.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
