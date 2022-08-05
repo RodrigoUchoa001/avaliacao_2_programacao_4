@@ -49,3 +49,13 @@ String getNameOfDayOfTheWeek(int month) {
       return 'WTF';
   }
 }
+
+String getNameOfDayOfTheWeekThreeChar(String month) {
+  String threeCharMonth = '';
+
+  for (var i = 0; i < 3; i++) {
+    threeCharMonth += month[i];
+  }
+
+  return threeCharMonth.toUpperCase();
+}

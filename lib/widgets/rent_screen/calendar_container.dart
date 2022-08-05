@@ -40,7 +40,7 @@ class CalendarContainer extends StatelessWidget {
                 ],
               ),
             ],
-          )
+          ),
         ],
       ),
     );
