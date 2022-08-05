@@ -1,5 +1,6 @@
 import 'package:avaliacao_2/provider/bottom_icon_selected_provider.dart';
 import 'package:avaliacao_2/provider/category_selected_provider.dart';
+import 'package:avaliacao_2/provider/rent_top_selected_button_provider.dart';
 import 'package:avaliacao_2/provider/theme_provider.dart';
 import 'package:avaliacao_2/screens/my_home_page.dart';
 import 'package:avaliacao_2/screens/rents_screen.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => CategorySelectedProvider()),
         ChangeNotifierProvider(create: (_) => BottomIconSelectedProvider()),
+        ChangeNotifierProvider(create: (_) => RentTopSelectedButtonProvider()),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',

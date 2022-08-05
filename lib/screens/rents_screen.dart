@@ -1,3 +1,4 @@
+import 'package:avaliacao_2/widgets/rent_screen/rent_top_selected_button.dart';
 import 'package:avaliacao_2/widgets/top_container.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,17 @@ class RentsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return TopContainer(
       child: Column(
-        children: [],
+        children: [
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                for (int i = 0; i < rentTopButtons.length; i++)
+                  RentTopSelectedButton(index: i, text: rentTopButtons[i].text),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
