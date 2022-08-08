@@ -56,6 +56,7 @@ class FirstWidget extends StatelessWidget {
     ];
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Themes.temaClaro.scaffoldBackgroundColor,
         body: screens.elementAt(provider.getIconActivated()),
         bottomNavigationBar: const NavigationBottomBar(),
       ),

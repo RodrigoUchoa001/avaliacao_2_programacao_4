@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class Themes {
   static final temaClaro = ThemeData(
+    scaffoldBackgroundColor: const Color(0xFFF6F6F5),
     colorScheme: const ColorScheme.light(),
     appBarTheme: const AppBarTheme(
       backgroundColor: Color(0xFFfcbc3d),

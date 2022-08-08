@@ -15,6 +15,7 @@ class ToolkitWidget extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         border: Border.all(color: corBorda!.withOpacity(0.3)),
+        color: Colors.white,
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20),

@@ -11,9 +11,6 @@ class RentedItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final categoriaAtivada = Theme.of(context).appBarTheme.backgroundColor;
-    final categoriaDesativada = Theme.of(context).disabledColor;
-
     final Color? corBorda = Theme.of(context).textTheme.bodyLarge?.color;
     return Container(
       padding: const EdgeInsets.all(12),
@@ -23,6 +20,7 @@ class RentedItemWidget extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: corBorda!.withOpacity(0.3)),
+        color: Colors.white,
       ),
       child: Stack(
         alignment: AlignmentDirectional.topEnd,
