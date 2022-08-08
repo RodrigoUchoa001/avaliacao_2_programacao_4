@@ -39,7 +39,7 @@ List<RentedItem> rentedItens = [
     devolutionAdress: 'Heesterveld 28 -1102SB -AMSTERDAM',
   ),
   RentedItem(
-    imagePath: 'assets/images/general_toolkit.png',
+    imagePath: 'assets/images/drill_tool.png',
     name: 'General toolkit',
     leaseDate: DateTime(actualDate.year, actualDate.month, actualDate.day),
     devolutionAdress: 'Heesterveld 28 -1102SB -AMSTERDAM',

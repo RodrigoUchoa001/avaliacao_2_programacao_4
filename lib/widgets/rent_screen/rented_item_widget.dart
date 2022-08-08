@@ -16,7 +16,7 @@ class RentedItemWidget extends StatelessWidget {
 
     final Color? corBorda = Theme.of(context).textTheme.bodyLarge?.color;
     return Container(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(12),
       margin: const EdgeInsets.all(8.0),
       width: double.infinity,
       height: 200,
@@ -28,12 +28,25 @@ class RentedItemWidget extends StatelessWidget {
         alignment: AlignmentDirectional.topEnd,
         children: [
           Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Row(
                 children: [
-                  Image.asset(rentedItem.imagePath, width: 120, height: 120),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Container(
+                      height: 120,
+                      width: 120,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          fit: BoxFit.fitWidth,
+                          image: AssetImage(rentedItem.imagePath),
+                        ),
+                      ),
+                    ),
+                  ),
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
