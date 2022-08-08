@@ -12,7 +12,18 @@ class HomeTopBar extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Icon(Icons.home_outlined),
+              Container(
+                height: 50,
+                width: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  image: const DecorationImage(
+                    fit: BoxFit.fitWidth,
+                    image: AssetImage('assets/images/homely_logo.png'),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 10),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
