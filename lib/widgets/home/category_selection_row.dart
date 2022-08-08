@@ -19,7 +19,7 @@ class _CategorySelectionRowState extends State<CategorySelectionRow> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Categories', style: Theme.of(context).textTheme.bodyLarge),
+          Text('Categorias', style: Theme.of(context).textTheme.bodyLarge),
           SizedBox(
             height: 70,
             child: ListView.builder(
@@ -53,8 +53,8 @@ class Category {
 }
 
 List<Category> categories = [
-  Category(icon: Icons.content_copy_rounded, name: 'All Topics'),
-  Category(icon: Icons.build_outlined, name: 'Tool List'),
+  Category(icon: Icons.content_copy_rounded, name: 'Tudo'),
+  Category(icon: Icons.build_outlined, name: 'Ferramentas'),
   Category(icon: Icons.videocam_outlined, name: 'Videos'),
-  Category(icon: Icons.lock_outlined, name: 'Locked'),
+  Category(icon: Icons.lock_outlined, name: 'Bloqueado'),
 ];

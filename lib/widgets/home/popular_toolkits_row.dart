@@ -11,7 +11,7 @@ class PopularToolkitsRow extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Popular toolkits',
+          Text('Conjuntos Populares',
               style: Theme.of(context).textTheme.bodyLarge),
           SizedBox(
             height: 230,
@@ -47,17 +47,17 @@ class Toolkit {
 List<Toolkit> toolkits = [
   Toolkit(
       imagePath: 'assets/images/carpentry_toolkit.png',
-      title: 'Carpentry toolkit',
+      title: 'Conj. de Carpintaria',
       price: 12,
       rating: 4),
   Toolkit(
       imagePath: 'assets/images/gardening_toolkit.png',
-      title: 'Gardening toolkit',
+      title: 'Conj. de Jardinagem',
       price: 10,
       rating: 5),
   Toolkit(
       imagePath: 'assets/images/general_toolkit.png',
-      title: 'General toolkit',
+      title: 'Conj. Geral',
       price: 10,
       rating: 5),
 ];

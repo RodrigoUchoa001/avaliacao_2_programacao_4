@@ -9,7 +9,7 @@ class ToolkitWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final Color? corBorda = Theme.of(context).textTheme.bodyLarge?.color;
     return Container(
-      width: 150,
+      width: 160,
       height: 230,
       margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
       decoration: BoxDecoration(
@@ -32,7 +32,7 @@ class ToolkitWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(
-                    '${toolkit.price}\$/day',
+                    'R\$${toolkit.price}/dia',
                     style: TextStyle(
                         color: Colors.red.withOpacity(0.7),
                         fontWeight: FontWeight.bold),

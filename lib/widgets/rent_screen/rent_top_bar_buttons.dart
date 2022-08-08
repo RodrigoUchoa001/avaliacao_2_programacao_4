@@ -25,7 +25,7 @@ class RentTopButton {
 }
 
 List<RentTopButton> rentTopButtons = [
-  RentTopButton(text: 'Previous'),
-  RentTopButton(text: 'Current'),
-  RentTopButton(text: 'Reserved'),
+  RentTopButton(text: 'Anteriores'),
+  RentTopButton(text: 'Atual'),
+  RentTopButton(text: 'Reservados'),
 ];

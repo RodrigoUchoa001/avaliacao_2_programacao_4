@@ -16,7 +16,7 @@ class CalendarContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                '${getNameOfIntMonth(actualDate.month)} ${actualDate.day}, ${getNameOfDayOfTheWeek(actualDate.weekday)}',
+                '${getNameOfDayOfTheWeek(actualDate.weekday)}, ${actualDate.day} de ${getNameOfIntMonth(actualDate.month)}',
                 style: Theme.of(context)
                     .textTheme
                     .bodyLarge!
@@ -25,7 +25,7 @@ class CalendarContainer extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    'Change return day',
+                    'Mudar data de devolução',
                     style: TextStyle(
                       color: Theme.of(context).cardColor,
                       fontWeight: FontWeight.bold,

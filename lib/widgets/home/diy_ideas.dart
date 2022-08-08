@@ -14,11 +14,11 @@ class DiyIdeas extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Diy Ideas',
+                'Ideias de DIY',
                 style: Theme.of(context).textTheme.bodyLarge,
               ),
               Text(
-                'see all',
+                'ver todos',
                 style: TextStyle(
                   color: Theme.of(context).cardColor,
                   fontWeight: FontWeight.bold,
@@ -61,13 +61,13 @@ class DiyIdeaVideo {
 List<DiyIdeaVideo> videos = [
   DiyIdeaVideo(
     thumbnailPath: 'assets/images/dyi_shelves.jpg',
-    title: 'DIY Shelves',
+    title: 'Prateleiras',
     views: 572,
     likes: 126,
   ),
   DiyIdeaVideo(
     thumbnailPath: 'assets/images/dyi_shelves.jpg',
-    title: 'Garden Project',
+    title: 'Projeto de Jardim',
     views: 403,
     likes: 98,
   ),

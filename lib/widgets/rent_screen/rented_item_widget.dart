@@ -59,7 +59,7 @@ class RentedItemWidget extends StatelessWidget {
                         ),
                         const SizedBox(height: 25),
                         Text(
-                          'The lease expires on',
+                          'O tempo do aluguel expira em',
                           style: Theme.of(context)
                               .textTheme
                               .bodyLarge!
@@ -67,7 +67,7 @@ class RentedItemWidget extends StatelessWidget {
                         ),
                         const SizedBox(height: 5),
                         Text(
-                          '${getNameOfIntMonth(rentedItem.leaseDate.month)} ${rentedItem.leaseDate.day}, ${getNameOfDayOfTheWeek(rentedItem.leaseDate.weekday)}',
+                          '${getNameOfDayOfTheWeek(rentedItem.leaseDate.weekday)}, ${rentedItem.leaseDate.day} de ${getNameOfIntMonth(rentedItem.leaseDate.month)}',
                           style:
                               Theme.of(context).textTheme.bodyLarge!.copyWith(
                                     fontSize: 18,

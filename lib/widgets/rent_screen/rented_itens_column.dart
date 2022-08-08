@@ -33,14 +33,14 @@ final actualDate = DateTime.now();
 
 List<RentedItem> rentedItens = [
   RentedItem(
-    imagePath: 'assets/images/general_toolkit.png',
-    name: 'Drill tool',
+    imagePath: 'assets/images/drill_tool.png',
+    name: 'Furadeira',
     leaseDate: DateTime(actualDate.year, actualDate.month, actualDate.day + 4),
     devolutionAdress: 'Heesterveld 28 -1102SB -AMSTERDAM',
   ),
   RentedItem(
-    imagePath: 'assets/images/drill_tool.png',
-    name: 'General toolkit',
+    imagePath: 'assets/images/general_toolkit.png',
+    name: 'Conj. Geral',
     leaseDate: DateTime(actualDate.year, actualDate.month, actualDate.day),
     devolutionAdress: 'Heesterveld 28 -1102SB -AMSTERDAM',
   ),

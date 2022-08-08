@@ -28,7 +28,7 @@ class _SearchBarState extends State<SearchBar> {
           style: const TextStyle(color: Colors.black),
           cursorColor: Theme.of(context).appBarTheme.backgroundColor,
           decoration: InputDecoration(
-            hintText: 'what are you looking for?',
+            hintText: 'O que você está procurando?',
             hintStyle: Theme.of(context).textTheme.labelSmall,
             filled: true,
             fillColor: Colors.white,

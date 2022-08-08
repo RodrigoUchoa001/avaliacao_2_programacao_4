@@ -1,29 +1,29 @@
 String getNameOfIntMonth(int month) {
   switch (month) {
     case 1:
-      return 'January';
+      return 'Janeiro';
     case 2:
-      return 'February';
+      return 'Fevereiro';
     case 3:
-      return 'March';
+      return 'Março';
     case 4:
-      return 'April';
+      return 'Abril';
     case 5:
-      return 'May';
+      return 'Maio';
     case 6:
-      return 'June';
+      return 'Junho';
     case 7:
-      return 'July';
+      return 'Julho';
     case 8:
-      return 'August';
+      return 'Agosto';
     case 9:
-      return 'September';
+      return 'Setembro';
     case 10:
-      return 'October';
+      return 'Outubro';
     case 11:
-      return 'November';
+      return 'Novembro';
     case 12:
-      return 'December';
+      return 'Dezembro';
     default:
       return 'WTF';
   }
@@ -32,19 +32,19 @@ String getNameOfIntMonth(int month) {
 String getNameOfDayOfTheWeek(int month) {
   switch (month) {
     case 1:
-      return 'Monday';
+      return 'Segunda';
     case 2:
-      return 'Tuesday';
+      return 'Terça';
     case 3:
-      return 'Wednesday';
+      return 'Quarta';
     case 4:
-      return 'Thursday';
+      return 'Quinta';
     case 5:
-      return 'Friday';
+      return 'Sexta';
     case 6:
-      return 'Saturday';
+      return 'Sábado';
     case 7:
-      return 'Sunday';
+      return 'Domingo';
     default:
       return 'WTF';
   }

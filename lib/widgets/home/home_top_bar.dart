@@ -36,7 +36,7 @@ class HomeTopBar extends StatelessWidget {
                         ?.copyWith(fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    'Everything you need for your DIY',
+                    'Tudo o que você precisa para o seu DIY',
                     style: Theme.of(context).textTheme.titleMedium,
                   )
                 ],

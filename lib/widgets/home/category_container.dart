@@ -26,7 +26,7 @@ class _CategoryContainerState extends State<CategoryContainer> {
     final Color? corBorda = Theme.of(context).textTheme.bodyLarge?.color;
 
     return Container(
-      width: 120,
+      width: 130,
       margin: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
       decoration: BoxDecoration(
         color: (provider.categories[widget.index]

@@ -7,7 +7,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        'Profile',
+        'Perfil',
         style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 30),
       ),
     );
