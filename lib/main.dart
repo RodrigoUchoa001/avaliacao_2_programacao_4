@@ -2,7 +2,9 @@ import 'package:avaliacao_2/provider/bottom_icon_selected_provider.dart';
 import 'package:avaliacao_2/provider/category_selected_provider.dart';
 import 'package:avaliacao_2/provider/rent_top_selected_button_provider.dart';
 import 'package:avaliacao_2/provider/theme_provider.dart';
+import 'package:avaliacao_2/screens/local_screen.dart';
 import 'package:avaliacao_2/screens/my_home_page.dart';
+import 'package:avaliacao_2/screens/profile_page.dart';
 import 'package:avaliacao_2/screens/rents_screen.dart';
 import 'package:avaliacao_2/widgets/navigation_bottom_bar.dart';
 import 'package:flutter/material.dart';
@@ -48,9 +50,9 @@ class FirstWidget extends StatelessWidget {
 
     List<Widget> screens = const [
       MyHomePage(),
-      Text('local'),
+      LocalPage(),
       RentsScreen(),
-      Text('profile'),
+      ProfilePage(),
     ];
     return SafeArea(
       child: Scaffold(
